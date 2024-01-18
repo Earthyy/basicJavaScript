@@ -1,0 +1,13 @@
+
+#classChange{
+    color: aliceblue;
+    background-color: black;
+}
+
+.light {
+    background-color: aliceblue;
+}
+.dark {
+    background-color: black;
+    color: aliceblue;
+}

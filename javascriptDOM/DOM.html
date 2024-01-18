@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- onload เป็น event ที่ javascript ใช้กับ HTML เมื่อมีการโหลด หน้า HTML  -->
+<body class="light" onload="welcome()"> 
+    
+    <p id="title">ยินดีตอนรับ</p>
+    <p id="changeClass">changeClass ด้วย .setAttribute เพื่อนำไปใช้กับ style</p>
+    <button type="button" onclick="displayText0();">เปลี่ยน style</button> 
+
+    <p>ฉลาด</p>
+    <p id="demo">ฉลาดมาก</p>
+    <!-- <button type="button" onclick="displayText();">เปลี่ยนคำ</button>  -->
+    <button type="button" id="btn">เปลี่ยนคำ</button>
+
+    <p id="change" class="changes">การเเสดงผลตัวเเปรด้วยเครื่องหมาย `.....`</p>
+    <button type="button" onclick="displayText2();">เปลี่ยนคำ</button> 
+    <br> <br>
+    <button type="button" onclick="lightMode();">โหมดสว่าง</button> 
+    <button type="button" onclick="darkMode();">โหมดมืด</button> <br>
+
+    <!-- this บ่งบอกว่าให้โยน object ก้อนนี้ลงไปในต้อง function hightlight หากมีการคลิกหรือโฟกัสที่ object นี้ -->
+    <input type="text" onfocus="hightlight(this)" onblur="unhightlight(this)"> <br>
+
+    <label for="">เลือกภาษา</label>
+    <!-- <select name="" id="menu" onchange="getMenu()"> ใช้กับ domEvent ธรรมดา -->
+    <!-- ใช้กับ eventListener -->
+    <select  name="" id="menu"> 
+        <option value="">เลือกภาษา</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="PHP">PHP</option>
+    </select>
+    <p id="displayMenu"></p>
+
+    <script src="/่javascriptDOM/basicDOM.js"></script>
+    <script src="/่javascriptDOM/domdoc.js"></script>
+    <!-- <script src="/่javascriptDOM/domNode.js"></script> -->
+    <script src="/่javascriptDOM/domEvent.js"></script>
+</body>
+</html>
