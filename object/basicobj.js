@@ -19,3 +19,19 @@ let callsalary = {
 };
 
 document.write("<br> เงินเดือน = ",callsalary.salary());
+
+
+let myObj = {
+    nameProduct:"Iqoo 12",
+    cpu:"Snapdragon 8 Gen 3 + Chip Q1",
+    price:27999,
+    ram:12,
+    rom:512,
+    usbtype:"C 2",
+    spec:function(){
+        return "สเปคของ " + this.nameProduct + " CPU " + this.cpu + " ราคา " + this.price + " แรม " + this.ram +
+            " หน่วยความจำ " + this.rom + " usb " + this.usbtype;
+    }
+}
+
+console.log(myObj.spec());
